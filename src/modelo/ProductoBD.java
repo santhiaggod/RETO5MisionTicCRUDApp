@@ -53,8 +53,8 @@ public class ProductoBD extends ConexionBD {
         sql += "nombre = ' " +pro.getNombre() + "',";
         sql += "cantidad = " +pro.getCantidad()+ ",";
         sql += "categoria = ' " +pro.getCategoria() + "',";
-        sql +=  "precio = " + pro.getPrecio();
-        sql +=  "WHERE id = " + pro.getId()+";" ;
+        sql += "precio = " + pro.getPrecio();
+        sql += "WHERE id = " + pro.getId()+";" ;
         
         return insertarBD(sql);
     }
